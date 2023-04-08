@@ -1,23 +1,53 @@
-import React from 'react'
-import './style.css'
+import React, { useState } from 'react'
+// import { Link } from 'react-router-dom'
+import { NavLink} from "react-router-dom";
 
-const navbar = () => {
+import './style.css'
+const Navbar = () => {
+const [color,setColor]=useState(" ")
+//  function  myFunction(){
+//   if(isActive){
+//     color:'green';
+//   }
+//   else(){
+    
+//   }
+//  } 
+  // function myFunction() {
+  //   if(isActive){
+      
+  //   }
+    // code here CAN use carName
+  // }
+  // const [active, isActive] = useState('red');
   return (
-    <div>
-    <li>
-      <Link to="/">Home</Link>
-    </li>
-    <li>
-      <Link to="/about">About</Link>
-    </li>
-    <li>
-      <Link to="/contact">Contact</Link>
-    </li>
-    <li>
-      <Link to="/login">Login</Link>
-    </li>
+    <div className='Navbar'>
+     
+     <ul>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/dashboard">Dashboard</NavLink>
+          </li>
+          <li>
+            <NavLink to="/services">Services</NavLink>
+          </li>
+          <li>
+            <NavLink to="/policy">Policy</NavLink>
+          </li>
+          <li>
+            <NavLink to="/login">Login</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">Contact</NavLink>
+          </li>
+        </ul>
   </div>
   )
 }
 
-export default navbar
+export default Navbar

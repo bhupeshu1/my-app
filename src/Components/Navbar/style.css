@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    width: 100%;
+    height:80px;
+    display: flex;
+    background-color: #FCF6E6;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    gap:70px;
+
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+   line-height: 16px;
+   font-weight: 500;
+   color: #0C0C0C;
+   font-style: normal;
+   /* padding: 0px 50px; */
+   /* font-family: 'Plus Jakarta Sans'; */
+   font-family: 'Plus Jakarta Sans';
+}
+/* NavLink{
+    text-decoration: none;
+} */
