@@ -1,52 +1,27 @@
-import React, { useState } from 'react'
-// import { Link } from 'react-router-dom'
-import { NavLink} from "react-router-dom";
-
+import React from 'react'
+import { NavLink } from "react-router-dom";
 import './style.css'
+const navbarData = [
+  {  "id":0,"path": '/', "label": "Home" },
+  {  "id":1,"path": '/about', "label": "About" },
+  {   "id":2,"path": '/contact', "label": "Contact" },
+  {   "id":3,"path": '/dashboard', "label": "Dashboard" },
+  {  "id":4,"path": '/services', "label": "Services" },
+  {  "id":5,"path": '/login', "label": "Login" },
+  { "id":6, "path": '/policy', "label": "Policy" },
+]
 const Navbar = () => {
-const [color,setColor]=useState(" ")
-//  function  myFunction(){
-//   if(isActive){
-//     color:'green';
-//   }
-//   else(){
-    
-//   }
-//  } 
-  // function myFunction() {
-  //   if(isActive){
-      
-  //   }
-    // code here CAN use carName
-  // }
-  // const [active, isActive] = useState('red');
   return (
     <div className='Navbar'>
-     
-     <ul>
+
+      <ul>
+        {navbarData.map((item, index) => (
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink  key='index' to={item.path}>{item.label}</NavLink>
           </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/dashboard">Dashboard</NavLink>
-          </li>
-          <li>
-            <NavLink to="/services">Services</NavLink>
-          </li>
-          <li>
-            <NavLink to="/policy">Policy</NavLink>
-          </li>
-          <li>
-            <NavLink to="/login">Login</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
-        </ul>
-  </div>
+        ))}
+      </ul>
+    </div>
   )
 }
 

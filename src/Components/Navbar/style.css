@@ -29,6 +29,9 @@ a{
    /* font-family: 'Plus Jakarta Sans'; */
    font-family: 'Plus Jakarta Sans';
 }
+li{
+    border-bottom: 5px solid yellow;
+}
 /* NavLink{
     text-decoration: none;
 } */
