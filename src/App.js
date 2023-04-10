@@ -10,6 +10,7 @@ import Login from '../src/Pages/Login/login'
 import Policy from './Pages/Policy/policy';
 import Dashboard from './Pages/Dashboard/dashboard';
 import Services from './Pages/Services/services';
+import Error404Page from './Pages/Error404Page';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
     <Route path='/policy'  element={<Policy/>} />
     <Route path='/dashboard'  element={<Dashboard/>} />
     <Route path='/services'  element={<Services/>} />
+    <Route path='/*'  element={<Error404Page/>} />
     </Routes>
     
     </BrowserRouter>

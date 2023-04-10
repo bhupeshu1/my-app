@@ -14,10 +14,10 @@ const Navbar = () => {
   return (
     <div className='Navbar'>
 
-      <ul>
+      <ul className='navbar'>
         {navbarData.map((item, index) => (
           <li>
-            <NavLink  key='index' to={item.path}>{item.label}</NavLink>
+            <NavLink style={({isActive})=>{return{color:isActive ? 'red':'black' }}} className="navbar-link"  key='index' to={item.path}>{item.label}</NavLink>
           </li>
         ))}
       </ul>

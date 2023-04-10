@@ -18,7 +18,20 @@ li{
     list-style: none;
     cursor: pointer;
 }
-a{
+/* a{
+    text-decoration: none;
+    font-size: 16px;
+   line-height: 16px;
+   font-weight: 500;
+   color: #0C0C0C;
+   font-style: normal;
+   /* padding: 0px 50px; */
+   /* font-family: 'Plus Jakarta Sans'; */
+/* li{
+    border-bottom: 5px solid yellow;
+} */
+.navbar{}
+.navbar-link{
     text-decoration: none;
     font-size: 16px;
    line-height: 16px;
@@ -29,9 +42,11 @@ a{
    /* font-family: 'Plus Jakarta Sans'; */
    font-family: 'Plus Jakarta Sans';
 }
-li{
-    border-bottom: 5px solid yellow;
-}
-/* NavLink{
-    text-decoration: none;
+/* .navbar-link:hover{
+    color: green;
+} */
+/* .active{
+    color:skyblue;
+    border-bottom: 4px solid yellow;
+    background-color: rgb(154, 89, 6);
 } */
