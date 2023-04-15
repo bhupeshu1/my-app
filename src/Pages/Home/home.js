@@ -1,14 +1,26 @@
-// import React from 'react'
+import React from 'react'
 import './style.css';
-import {useLocation,useNavigate } from 'react-router-dom';
-const Home = () => {
+import {useLocation} from 'react-router-dom';
+import Footer from '../../Components/Footer/footer';
+const Home = (props) => {
   // const navigate =useNavigate();
+  const [status,setStatus]=React.useState(false);
   const location = useLocation();
   console.log(location)
   return (
-    <div>
-      home
-{/* <h1 to onClick={() =>navigate('/about')} style={{cursor:"pointer"}}>go to about page</h1> */}
+    <div className='home-container'>
+      {
+      status ? <h1>	If the user clicks "OK", the input value is returned.
+      Otherwise null is returned.</h1> : false
+      }
+      <button onClick={()=>setStatus(false)}>Toggle</button>
+      <Footer heading="good morning" place="Almora Uttarakhand"/>
+
+      
+{/*       
+        <button onClick={()=>setStatus(true)}>Button click and read the sentence</button>
+        <button onClick={()=>setStatus(false)}>Hide the content</button> */}
+
     </div>
   )
 }

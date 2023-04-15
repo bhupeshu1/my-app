@@ -11,6 +11,7 @@ import Policy from './Pages/Policy/policy';
 import Dashboard from './Pages/Dashboard/dashboard';
 import Services from './Pages/Services/services';
 import Error404Page from './Pages/Error404Page';
+import LoginPage from './Components/Elements/auth/LoginPage/login';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
     <Route path='/dashboard'  element={<Dashboard/>} />
     <Route path='/services'  element={<Services/>} />
     <Route path='/*'  element={<Error404Page/>} />
+    <Route path='/loginPage'  element={<LoginPage/>} />
     </Routes>
     
     </BrowserRouter>

@@ -20,6 +20,9 @@ const Navbar = () => {
             <NavLink style={({isActive})=>{return{color:isActive ? 'red':'black' }}} className="navbar-link"  key='index' to={item.path}>{item.label}</NavLink>
           </li>
         ))}
+        <li>
+          <NavLink to='/loginPage'>LoginPage</NavLink>
+        </li>
       </ul>
     </div>
   )
