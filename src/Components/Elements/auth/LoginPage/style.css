@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .form {
     display: flex;
     flex-direction: column;
@@ -6,6 +11,7 @@
     box-shadow: 0px 16px 40px rgba(176, 166, 112, 0.2);
     border-radius: 20px;
     width: 500px;
+    /* max-width: 500px; */
     height: 400px;
     padding: 40px 40px;
 
@@ -32,6 +38,7 @@ input {
 
 .form-container {
     width: 100%;
+    /* min-width: 700px; */
     min-height: 100vh;
     display: flex;
     align-items: center;

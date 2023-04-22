@@ -16,8 +16,8 @@ const Navbar = () => {
 
       <ul className='navbar'>
         {navbarData.map((item, index) => (
-          <li>
-            <NavLink style={({isActive})=>{return{color:isActive ? 'red':'black' }}} className="navbar-link"  key='index' to={item.path}>{item.label}</NavLink>
+          <li key={index}>
+            <NavLink style={({isActive})=>{return{color:isActive ? 'red':'black' }}} className="navbar-link"   to={item.path}>{item.label}</NavLink>
           </li>
         ))}
         <li>

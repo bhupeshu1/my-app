@@ -1,0 +1,22 @@
+.about-container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-image {
+    width: 100%;
+    height: 400px;
+    background-image: url('/public/Images/workshop_reactangle_image.png');
+
+    /* background-size: 100% 100%; */
+    /* border: 1px solid red; */
+    /* background-repeat:no-repeat ; */
+
+}

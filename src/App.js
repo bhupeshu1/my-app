@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import React from 'react';
 import { BrowserRouter,Route, Routes } from 'react-router-dom'
 import './App.css';
@@ -19,7 +18,8 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <Routes>
-    <Route path='/'  element={<Home/>} />
+    <Route path='/' element={<LoginPage/>} />
+    <Route path='/home' element={<Home/>} />
     <Route path='/about'  element={<About/>} />
     <Route path='/contact'  element={<Contact/>} /> 
     <Route path='/login'  element={<Login/>} />
@@ -27,7 +27,7 @@ function App() {
     <Route path='/dashboard'  element={<Dashboard/>} />
     <Route path='/services'  element={<Services/>} />
     <Route path='/*'  element={<Error404Page/>} />
-    <Route path='/loginPage'  element={<LoginPage/>} />
+    {/* <Route path='/loginPage'  element={<LoginPage/>} /> */}
     </Routes>
     
     </BrowserRouter>

@@ -1,0 +1,13 @@
+.policy-div{
+    width: 400px;
+    height: 400px;
+    border: 2px solid brown;
+    background: repeating-linear-gradient(to right,red,yellow 10%,green 20%);
+}
+.policy-div-2{
+    width: 300px;
+    height: 300px;
+    border: 2px solid brown;
+    background: repeating-radial-gradient( red, yellow 10%,green 15%)
+
+}
