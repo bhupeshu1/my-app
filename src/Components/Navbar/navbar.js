@@ -1,5 +1,9 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { GrClose } from 'react-icons/gr';
+
+
 import './style.css'
 const navbarData = [
   {  "id":0,"path": '/', "label": "Home" },
@@ -13,11 +17,15 @@ const navbarData = [
 const Navbar = () => {
   return (
     <div className='Navbar'>
+      <div className='icon-section'>
+      <GiHamburgerMenu/>
+      <GrClose/>
+      </div>
 
-      <ul className='navbar'>
+      <ul>
         {navbarData.map((item, index) => (
           <li key={index}>
-            <NavLink style={({isActive})=>{return{color:isActive ? 'red':'black' }}} className="navbar-link"   to={item.path}>{item.label}</NavLink>
+            <NavLink style={({isActive})=>{return{color:isActive ? 'red':'white' }}} className="navbar-link"   to={item.path}>{item.label}</NavLink>
           </li>
         ))}
         <li>
